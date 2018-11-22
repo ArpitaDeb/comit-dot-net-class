@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nicolas Isnardi - Resume - Contact</title>
+  <link href="styles.css" rel="stylesheet">
+  <script>
+    window.onload = function () {
+      var form = document.getElementsByTagName('form')[0];
+      var firstname = document.querySelector('#firstname');
+      var password = document.querySelector('#password'); // Check password using this reference
+
+      form.addEventListener("submit", function (event) {
+        const value = firstname.value;
+        if (value === '' || value.length < 5) {
+          alert('error');
+          event.preventDefault();
+        }
+      }, false);
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Nicolas Isnardi - Contact</h1>
+  <a href="index.html">Home</a>
+  <a href="personal.html">Personal Info</a>
+  <a href="experience.html">Experience</a>
+  <a href="hobbies.html">Hobbies</a>
+  <br>
+  <br>
+  <br>
+  <!-- Generic Containers
+    <div>content</div> Block Level
+    <span>content</span> inline level
+  -->
+
+  <p>Hello, I'm <span>Nico</span></p>
+
+  <form action="index.html" method="GET">
+    <div>
+      <label for="firstname">First Name:</label>
+      <input type="text" name="firstname" id="firstname">
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" value="" name="password" id="password">
+    </div>
+    <div>
+      <label for="lastname">Lastname:</label>
+      <input type="text" value="Isnardi" name="lastname" id="lastname">
+    </div>
+    <div>
+      <label for="message">message</label>
+      <textarea name="message" id="message"></textarea>
+    </div>
+    <div>
+      <input type="submit">
+    </div>
+  </form>
+
+
+
+</body>
+
+</html>

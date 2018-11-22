@@ -1,0 +1,32 @@
+/* write some css */
+/* 
+  selector { 
+    property: value;
+  } 
+*/
+/* Selector by tag name => MANY */
+a {
+  color: green;
+}
+
+/* Selector by id => ONLY ONE */
+#home {
+  color: black;
+}
+
+/* Selector by class name => MANY */
+.disabled {
+  color: chocolate;
+}
+
+.bold {
+  color: blue;
+}
+
+div {
+  color: brown;
+}
+
+div p {
+  color: green;
+}
